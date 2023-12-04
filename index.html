@@ -1,0 +1,1528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>CODEBOX</title>
+    <link rel="icon" type="image/x-icon" href="#!">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="navbar navbar-dashboard fixed-top">
+  <button class="sandwich">
+    <span></span>
+  </button>
+  <div class="dropdown mx-xl-5 mx-2 user">
+    <button class="btn dropdown-toggle" data-bs-toggle="dropdown">
+      <i class="fa-solid fa-user"></i>
+    </button>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="#">Действие</a></li>
+      <li><a class="dropdown-item" href="#">Другое действие</a></li>
+      <li><a class="dropdown-item" href="#">Что-то еще здесь</a></li>
+    </ul>
+  </div>
+  <div class="dropdown me-xl-4 me-2">
+    <button class="btn dropdown-toggle" data-bs-toggle="dropdown">
+      Mega
+    </button>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="#">Действие</a></li>
+      <li><a class="dropdown-item" href="#">Другое действие</a></li>
+    </ul>
+  </div>
+  <div class="dropdown">
+    <button class="btn dropdown-toggle" data-bs-toggle="dropdown">
+      New
+    </button>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="#">Действие</a></li>
+      <li><a class="dropdown-item" href="#">Другое действие</a></li>
+      <li><a class="dropdown-item" href="#">Что-то еще здесь</a></li>
+    </ul>
+  </div>
+  <div class="ms-xl-4 ms-1">
+    <input class="search" type="search" placeholder=" Search projects...">
+  </div>
+  <div class="ms-xl-auto ms-0">
+    <div class="dropdown">
+      <button class="btn dropdown-toggle" data-bs-toggle="dropdown">
+        English
+      </button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">Действие</a></li>
+        <li><a class="dropdown-item" href="#">Другое действие</a></li>
+        <li><a class="dropdown-item" href="#">Что-то еще здесь</a></li>
+      </ul>
+    </div>
+  </div>
+  <button class="btn calendar mx-xl-3 mx-1" id="cal">
+    <i class="fa-regular fa-calendar-days fa-xl"></i>
+    <span>2</span>
+  </button>
+  <div class="bell dropdown mx-xl-3 mx-1">
+    <button class="btn dropdown-toggle" data-bs-toggle="dropdown">
+      <i class="fa-solid fa-bell fa-xl"></i>
+      <span>5</span>
+    </button>
+    <ul class="dropdown-menu">
+      <li>
+        <a class="dropdown-item" href="#">
+          <p class="card-text">Olivia Parkinson liked your massage</p>
+          <p class="card-text"><i class="fa-regular fa-clock fs-xs me-2"></i><small class="text-muted">46 minutes ago</small></p>
+        </a>
+      </li>
+      <li>
+        <a class="dropdown-item" href="#">
+          <p class="card-text">Olivia Parkinson liked your massage</p>
+          <p class="card-text"><i class="fa-regular fa-clock fs-xs me-2"></i><small class="text-muted">46 minutes ago</small></p>
+        </a>
+      </li>
+      <li>
+        <a class="dropdown-item" href="#">
+          <p class="card-text">Olivia Parkinson liked your massage</p>
+          <p class="card-text"><i class="fa-regular fa-clock fs-xs me-2"></i><small class="text-muted">46 minutes ago</small></p>
+        </a>
+      </li>
+      <li>
+        <a class="dropdown-item" href="#">
+          <p class="card-text">Olivia Parkinson liked your massage</p>
+          <p class="card-text"><i class="fa-regular fa-clock fs-xs me-2"></i><small class="text-muted">46 minutes ago</small></p>
+        </a>
+      </li>
+      <li>
+        <a class="dropdown-item" href="#">
+          <p class="card-text">Olivia Parkinson liked your massage</p>
+          <p class="card-text"><i class="fa-regular fa-clock fs-xs me-2"></i><small class="text-muted">46 minutes ago</small></p>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div class="dropdown mx-xl-3 mx-1">
+    <button class="btn dropdown-toggle" data-bs-toggle="dropdown">
+      Hoang.Thai
+    </button>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="#">Действие</a></li>
+      <li><a class="dropdown-item" href="#">Другое действие</a></li>
+      <li><a class="dropdown-item" href="#">Что-то еще здесь</a></li>
+    </ul>
+  </div>
+  <div class="dropdown dd-ava">
+    <button class="btn ava dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+    </button>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="#!">Действие</a></li>
+      <li><a class="dropdown-item" href="#!">Другое действие</a></li>
+      <li><a class="dropdown-item" href="#!">Что-то еще здесь</a></li>
+      <li><button type="button" class="dropdown-item">
+        <label class="switch-wrap">
+          <span>Dark Mode</span>
+          <input type="checkbox" id="dark-mode">
+          <span class="lever"></span>
+        </label>
+      </button></li>
+    </ul>
+  </div>
+  <button class="btn btn-light btn-right-menu">
+    <i class="fa-solid fa-align-left"></i>
+  </button>
+</header>
+<aside class="left-bar">
+  <div class="left-bar-top">
+    <div class="row align-items-center text-center">
+      <div class="col">
+        <a href="#!"><img class="logo" src="img/Logo.png" alt=""></a>
+      </div>
+    </div>
+  </div>
+  <div class="left-bar-bottom">
+    <div class="top-sec">
+      <div class="mb-3 ms-4">Navigation</div>
+      <nav>
+        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+          <button class="nav-link active" id="nav-dashboard-tab" data-bs-toggle="tab" data-bs-target="#dashboard">
+            <div class="dash-inbox d-flex">
+              <i class="fa-solid fa-gauge mx-4"></i>
+              Dashboard
+              <span class="ms-auto">2</span>
+            </div>
+          </button>
+          <button class="nav-link" id="nav-mail-tab" data-bs-toggle="tab" data-bs-target="#nav-mail">
+            <div class="d-flex align-items-center">
+              <i class="fa-solid fa-envelope mx-4"></i> 
+              Mailbox
+              <span class="ms-auto"></span>             
+            </div>
+          </button>
+          <button class="nav-link" id="nav-calendar-tab" data-bs-toggle="tab" data-bs-target="#nav-calendar">
+            <div class="d-flex align-items-center">
+              <i class="fa-solid fa-calendar-days mx-4"></i>
+              Calendar
+              <span class="ms-auto"></span>
+            </div>
+          </button>
+          <button class="nav-link" id="nav-pages-tab" data-bs-toggle="tab" data-bs-target="#nav-pages">
+            <div class="pages-inbox d-flex">
+              <i class="fa-regular fa-file mx-4"></i>
+              Pages
+              <span class="ms-auto">5</span>
+            </div>
+          </button>
+          <div class="my-4 ms-4">Components</div>
+          <button class="nav-link" id="nav-layouts-tab" data-bs-toggle="tab" data-bs-target="#nav-layouts">
+            <div class="d-flex align-items-center">
+              <i class="fa-solid fa-table-list mx-4"></i>
+              Layouts
+              <span class="ms-auto"></span>
+            </div>
+          </button>
+          <button class="nav-link" id="nav-ui-tab" data-bs-toggle="tab" data-bs-target="#nav-ui">
+            <div class="ui-inbox d-flex">
+              <i class="fa-solid fa-suitcase mx-4"></i> 
+              UI Elements
+              <span class="ms-auto">5</span>             
+            </div>
+          </button>
+          <button class="nav-link" id="nav-forms-tab" data-bs-toggle="tab" data-bs-target="#nav-forms">
+            <div class="d-flex align-items-center">
+              <i class="fa-solid fa-bars-progress mx-4"></i>
+              Forms
+              <span class="ms-auto"></span>
+            </div>
+          </button>
+          <button class="nav-link" id="nav-tables-tab" data-bs-toggle="tab" data-bs-target="#nav-tables">
+            <div class="d-flex align-items-center">
+              <i class="fa-solid fa-table-cells mx-4"></i>
+              Tables
+              <span class="ms-auto"></span>
+            </div>
+          </button>
+          <button class="nav-link" id="nav-chart-tab" data-bs-toggle="tab" data-bs-target="#nav-chart">
+            <div class="d-flex align-items-center">
+              <i class="fa-solid fa-chart-area mx-4"></i>
+              Chart
+              <span class="ms-auto"></span>
+            </div>
+          </button>
+          <button class="nav-link" id="nav-maps-tab" data-bs-toggle="tab" data-bs-target="#nav-maps">
+            <div class="d-flex align-items-center">
+              <i class="fa-solid fa-map mx-4"></i>
+              Maps
+              <span class="ms-auto"></span>
+            </div>
+          </button>
+        </div>
+      </nav>
+      <div class="mx-4 mt-3">
+        <p>Data Points</p>
+        <div class="d-flex align-items-center mb-3">
+          Milestone
+          <span class="ms-auto">70%</span>
+        </div>
+        <div class="progress" role="progressbar" aria-label="Info example" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+          <div class="progress-bar bg-info" style="width: 70%"></div>
+        </div>
+      </div>
+      <div class="mx-4 mt-4">
+        <div class="d-flex align-items-center mb-3">
+          Release
+          <span class="ms-auto">45%</span>
+        </div>
+        <div class="progress" role="progressbar" aria-label="Info example" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+          <div class="progress-bar bg-danger" style="width: 45%"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</aside>
+<aside class="right-bar">
+  <div class="right-bar-top">
+    <ul class="nav nav-tabs align-items-center row gx-0" id="myTab" role="tablist">
+      <li class="nav-item col-4" role="presentation">
+        <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane">
+          <i class="fa-solid fa-users"></i>
+        </button>
+      </li>
+      <li class="nav-item col-4" role="presentation">
+        <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane">
+          <i class="fa-regular fa-comments"></i>
+        </button>
+      </li>
+      <li class="nav-item col-4" role="presentation">
+        <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane">
+          <i class="fa-solid fa-gear"></i>
+        </button>
+      </li>
+    </ul>
+    <div class="tab-content" id="myTabContent">
+      <div class="tab-pane fade show active" id="home-tab-pane">
+        <div class="m-3">
+          <h5>Who to follow</h5>
+          <div class="card mb-1">
+            <div class="row g-0">
+              <div class="col-3 d-flex">
+                <div class="bg-img img-fluid rounded-start m-auto" style="background-image: url(img/ava1.jpg);"></div>
+                <span style="background-color: #39b54a;"></span>
+              </div>
+              <div class="col-9">
+                <div class="card-body">
+                  <h6 class="card-title">Hoang Thai</h6>
+                  <p class="card-text">Designer</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-1">
+            <div class="row g-0">
+              <div class="col-3 d-flex">
+                <div class="bg-img img-fluid rounded-start m-auto" style="background-image: url(img/ava2.jpg);"></div>
+                <span style="background-color: #ee2337;"></span>
+              </div>
+              <div class="col-9">
+                <div class="card-body">
+                  <h6 class="card-title">Mogen Polish</h6>
+                  <p class="card-text">Writter, Editor</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-1">
+            <div class="row g-0">
+              <div class="col-3 d-flex">
+                <div class="bg-img img-fluid rounded-start m-auto" style="background-image: url(img/ava3.jpg);"></div>
+                <span style="background-color: #ffc700;"></span>
+              </div>
+              <div class="col-9">
+                <div class="card-body">
+                  <h6 class="card-title">Mogen Polish</h6>
+                  <p class="card-text">Designer, Blogger</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-1">
+            <div class="row g-0">
+              <div class="col-3 d-flex">
+                <div class="bg-img img-fluid rounded-start m-auto" style="background-image: url(img/ava4.jpg);"></div>
+                <span style="background-color: #39b54a;"></span>
+              </div>
+              <div class="col-9">
+                <div class="card-body">
+                  <h6 class="card-title">Mogen Polish</h6>
+                  <p class="card-text">Musician</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-1">
+            <div class="row g-0">
+              <div class="col-3 d-flex">
+                <div class="bg-img img-fluid rounded-start m-auto" style="background-image: url(img/ava5.jpg);"></div>
+                <span style="background-color: #d4d4d4;"></span>
+              </div>
+              <div class="col-9">
+                <div class="card-body">
+                  <h6 class="card-title">Mogen Polish</h6>
+                  <p class="card-text">Designer, UI</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <button class="btn btn-connection mt-3">More Connections</button>
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane fade" id="profile-tab-pane">
+         <div class="widgets" style="background-color: #fff;">
+          <div class="messages">
+            <div class="border-bottom" style="max-height: 100px;">
+              <div class="card pt-2 new">
+                <div class="row g-0 px-3">
+                  <div class="col-auto">
+                    <div class="bg-img img-fluid rounded-start" style="background-image: url(img/ava.jpg);"></div>
+                  </div>
+                  <div class="col overflow-hidden">
+                    <div class="card-body">
+                      <h5 class="card-title">Marietta Volkova</h5>
+                      <p>Hello, how are you? I looking for...</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="border-bottom" style="max-height: 100px;">
+              <div class="card py-2">
+                <div class="row g-0 px-3">
+                  <div class="col-auto">
+                    <div class="bg-img img-fluid rounded-start" style="background-image: url(img/ava1.jpg);"></div>
+                  </div>
+                  <div class="col">
+                    <div class="card-body">
+                      <h5 class="card-title">Miguel Iriskin</h5>
+                      <p class="card-text">Lmfao</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="border-bottom" style="max-height: 100px;">
+              <div class="card py-2 new">
+                <div class="row g-0 px-3">
+                  <div class="col-auto">
+                    <div class="bg-img img-fluid rounded-start" style="background-image: url(img/ava3.jpg);"></div>
+                  </div>
+                  <div class="col">
+                    <div class="card-body">
+                      <h5 class="card-title">Lenovo Thinkpad</h5>
+                      <p class="card-text">I think it`s a good news!</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="border-bottom" style="max-height: 100px;">
+              <div class="card py-2">
+                <div class="row g-0 px-3">
+                  <div class="col-auto">
+                    <div class="bg-img img-fluid rounded-start" style="background-image: url(img/ava5.jpg);"></div>
+                  </div>
+                  <div class="col">
+                    <div class="card-body">
+                      <h5 class="card-title">Shawn Michaels</h5>
+                      <p class="card-text">Hello!</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="border-bottom" style="max-height: 100px;">
+              <div class="card py-2">
+                <div class="row g-0 px-3">
+                  <div class="col-auto">
+                    <div class="bg-img img-fluid rounded-start" style="background-image: url(img/face.jpg);"></div>
+                  </div>
+                  <div class="col">
+                    <div class="card-body">
+                      <h5 class="card-title">Divan Comfortable</h5>
+                      <p class="card-text">Hello!</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="border-bottom" style="max-height: 100px;">
+              <div class="card py-2">
+                <div class="row g-0 px-3">
+                  <div class="col-auto">
+                    <div class="bg-img img-fluid rounded-start" style="background-image: url(img/ava2.jpg);"></div>
+                  </div>
+                  <div class="col">
+                    <div class="card-body">
+                      <h5 class="card-title">Stevie Wonder</h5>
+                      <p class="card-text">Hello!</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="border-bottom" style="max-height: 100px;">
+              <div class="card py-2">
+                <div class="row g-0 px-3">
+                  <div class="col-auto">
+                    <div class="bg-img img-fluid rounded-start" style="background-image: url(img/ava4.jpg);"></div>
+                  </div>
+                  <div class="col">
+                    <div class="card-body">
+                      <h5 class="card-title">Kinder Surprise</h5>
+                      <p class="card-text">Hello!</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="border-bottom" style="max-height: 100px;">
+              <div class="card py-2">
+                <div class="row g-0 px-3">
+                  <div class="col-auto">
+                    <div class="bg-img img-fluid rounded-start" style="background-image: url(img/ava5.jpg);"></div>
+                  </div>
+                  <div class="col">
+                    <div class="card-body">
+                      <h5 class="card-title">Francisco Parmalato</h5>
+                      <p class="card-text">Hello!</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div style="max-height: 100px;">
+              <div class="card py-2">
+                <div class="row g-0 px-3">
+                  <div class="col-auto">
+                    <div class="bg-img img-fluid rounded-start" style="background-image: url(img/ava1.jpg);"></div>
+                  </div>
+                  <div class="col">
+                    <div class="card-body">
+                      <h5 class="card-title">Jack Morisson</h5>
+                      <p class="card-text">Hello!</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane fade" id="contact-tab-pane">
+        <div>
+          <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne">
+                  <div class="d-flex align-middle mt-2">
+                    <i class="fa-regular fa-image p-2"></i>
+                    <p class="p-1">Change photo</p>
+                  </div>
+                </button>
+              </h2>
+              <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo">
+                  <div class="d-flex align-middle mt-2">
+                    <i class="fa-solid fa-bell p-2"></i>
+                    <p class="p-1">Notifications</p>
+                  </div>
+                </button>
+              </h2>
+              <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree">
+                  <div class="d-flex align-middle mt-2">
+                    <i class="fa-solid fa-lock p-2"></i>
+                    <p class="p-1">Confidential</p>
+                  </div>
+                </button>
+              </h2>
+              <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour">
+                   <div class="d-flex align-middle mt-2">
+                    <i class="fa-solid fa-database p-2"></i>
+                    <p class="p-1">Data & memory</p>
+                  </div>
+                </button>
+              </h2>
+              <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive">
+                  <div class="d-flex align-middle mt-2">
+                    <i class="fa-solid fa-circle-half-stroke p-2"></i>
+                    <p class="p-1">Theme</p>
+                  </div>
+                </button>
+              </h2>
+              <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix">
+                  <div class="d-flex align-middle mt-2">
+                    <i class="fa-solid fa-globe p-2"></i>
+                    <p class="p-1">Language</p>
+                  </div>
+                </button>
+              </h2>
+              <div id="flush-collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="right-bar-bottom border-top mb-5 mb-xl-0">
+    <div>
+      <h5 class="card-title">Todo List</h5>
+      <p class="card-text">3 of 5 remaining</p>
+      <div class="form-check mb-2">
+        <input class="form-check-input" type="checkbox" checked>
+        <label class="form-check-label">
+          Build an angular app
+        </label>
+      </div>
+      <div class="form-check mb-2">
+        <input class="form-check-input" type="checkbox">
+        <label class="form-check-label">
+          Creating component page
+        </label>
+      </div>
+      <div class="form-check mb-2">
+        <input class="form-check-input" type="checkbox" checked>
+        <label class="form-check-label">
+          Design One page theme
+        </label>
+      </div>
+      <div class="form-check mb-2">
+        <input class="form-check-input" type="checkbox" checked>
+        <label class="form-check-label">
+          Build a js based app
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox">
+        <label class="form-check-label">
+          Responsive design for Smartphone
+        </label>
+      </div>
+      <form class="row g-0 mt-4">
+        <div class="col-9">
+          <input type="text" class="form-control" id="inputAdd" placeholder="Add new todo">
+        </div>
+        <div class="col-3">
+          <button type="submit" class="btn btn-primary mb-3">Add</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</aside>
+<section class="dash-page">
+  <div class="tab-content" id="nav-tabContent">
+    <div class="tab-pane fade show active" id="dashboard" role="tabpanel" tabindex="0">
+      <div class="container-fluid">
+        <div class="row gx-4 top-blocks justify-content-center ">
+          <div class="col-lg col-12 col-md-6 my-3 m-lg-0">
+            <div class="widgets p-3" style="background-color: #00bcd4; color: #fff;">
+              <div class="m-auto text-center">
+                <h2>1349</h2>
+                <p class="up">new feedbacks</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg col-12 col-md-6 my-3 m-lg-0">
+            <div class="widgets p-3" style="background-color: #8bc34a; color: #fff;">
+              <div class="m-auto text-center">
+                <h2>$12.5 M</h2>
+                <p class="up">total profit</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg col-12 col-md-6 my-3 m-lg-0">
+            <div class="widgets p-3" style="background-color: #1d89cf; color: #fff;">
+              <div class="m-auto text-center">
+                <h2>325</h2>
+                <p class="up">new orders</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg col-12 col-md-6 my-3 m-lg-0">
+            <div class="widgets p-3" style="background-color: #a767dd; color: #fff;">
+              <div class="m-auto text-center">
+                <h2>+56%</h2>
+                <p class="up">brand popularity</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg col-12 col-md-6 my-3 m-lg-0">
+            <div class="widgets p-3" style="background-color: #ffc700; color: #fff;">
+              <div class="m-auto text-center">
+                <h2>$12,500</h2>
+                <p class="up">revenue, 60% of the goal</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid">
+        <div class="row gx-4 mt-4 justify-content-center">
+          <div class="col-12 col-lg-5 mb-3 mb-lg-0">
+            <div class="widgets">
+              <h4 class="me-auto ps-3 py-2">Analysis</h4>
+              <div class="canvas-con">
+                <div class="row gx-0 mb-3">
+                  <div class="col-lg-6 col-auto">
+                    <div class="canvas-con-inner ms-3">
+                      <canvas id="circlechart" width="100%">
+                        
+                      </canvas>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col">
+                    <div id="my-legend-con" class="legend-con">
+                      <ul>
+                        <li onclick="updateDataset(event, '24'); ">
+                          <span class="chart-legend" style="background-color:#3993bb"></span>
+                          <span class="chart-legend-label-text">United States</span>
+                        </li>
+                        <li onclick="updateDataset(event, '13'); ">
+                          <span class="chart-legend" style="background-color:#65b5c2"></span>
+                          <span class="chart-legend-label-text">Russia</span>
+                        </li>
+                        <li onclick="updateDataset(event, '13'); ">
+                          <span class="chart-legend" style="background-color:#2e7bad"></span>
+                          <span class="chart-legend-label-text">Italy</span>
+                        </li>
+                        <li onclick="updateDataset(event, '26'); ">
+                          <span class="chart-legend" style="background-color:#23649e"></span>
+                          <span class="chart-legend-label-text">Germany</span>
+                        </li>
+                        <li onclick="updateDataset(event, '24'); ">
+                          <span class="chart-legend" style="background-color:#63daed"></span>
+                          <span class="chart-legend-label-text">Other</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-7">
+            <div class="widgets">
+              <div class="row justify-content-around">
+                <div class="col">
+                  <h4 class="ps-3 py-2">Statistics</h4>
+                </div>
+                <div class="col-auto">
+                  <ul class="nav nav-pills mb-3 mt-1 ms-auto" id="pills-tab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab">Week</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab">Month</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab">Year</button>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="pills-home" role="tabpanel">
+                  <div class="chartjs-wrapper">
+                    <canvas id="acquisition" class="chartjs"></canvas>
+                    <!-- <div id='customLegend' class='customLegend'></div> -->
+                  </div>
+                  <div class="row justify-content-center gx-0">
+                    <div class="col">
+                      <div class="m-3 text-center">
+                        <h4>3,834</h4>
+                        <span class="text-muted">Orders</span>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="m-3 text-center">
+                        <h4>10,232</h4>
+                        <span class="text-muted">Sellings</span>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="m-3 text-center">
+                        <h4>21,550</h4>
+                        <span class="text-muted">Items</span>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="m-3 text-center">
+                        <h4>5,118</h4>
+                        <span class="text-muted">Customers</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">...</div>
+                <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">...</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid">
+        <div class="row gx-4 mt-4 justify-content-center">
+          <div class="col-xl-4 col-12 mb-3 mb-xl-0">
+            <div class="widgets" style="min-height: 500px; max-height: 500px;">
+              <div class="p-3 d-flex border-bottom">
+                <span style="font-weight: bold; font-size: 18px;">Members</span>
+                <span class="ms-auto notification" style="background-color: #8bc34a">35</span>
+              </div>
+              <div class="widget-cards my-3">
+                <div class="card mb-1">
+                  <div class="row g-0">
+                    <div class="col-3 online d-flex">
+                      <div class="bg-img img-fluid rounded-start m-auto" style="background-image: url(img/ava1.jpg);"></div>
+                      <span style="background-color: #39b54a;"></span>
+                    </div>
+                    <div class="col-9">
+                      <div class="card-body">
+                        <h6 class="card-title">Hoang Thai</h6>
+                        <p class="card-text">Designer</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card mb-1">
+                  <div class="row g-0">
+                    <div class="col-3 online d-flex">
+                      <div class="bg-img img-fluid rounded-start m-auto" style="background-image: url(img/ava2.jpg);"></div>
+                      <span style="background-color: #ee2337;"></span>
+                    </div>
+                    <div class="col-9">
+                      <div class="card-body">
+                        <h6 class="card-title">Mogen Polish</h6>
+                        <p class="card-text">Writter, Editor</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card mb-1">
+                  <div class="row g-0">
+                    <div class="col-3 online d-flex">
+                      <div class="bg-img img-fluid rounded-start m-auto" style="background-image: url(img/ava3.jpg);"></div>
+                      <span style="background-color: #ffc700;"></span>
+                    </div>
+                    <div class="col-9">
+                      <div class="card-body">
+                        <h6 class="card-title">Mogen Polish</h6>
+                        <p class="card-text">Designer, Blogger</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card mb-1">
+                  <div class="row g-0">
+                    <div class="col-3 online d-flex">
+                      <div class="bg-img img-fluid rounded-start m-auto" style="background-image: url(img/ava4.jpg);"></div>
+                      <span style="background-color: #39b54a;"></span>
+                    </div>
+                    <div class="col-9">
+                      <div class="card-body">
+                        <h6 class="card-title">Mogen Polish</h6>
+                        <p class="card-text">Musician</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card mb-1">
+                  <div class="row g-0">
+                    <div class="col-3 online d-flex">
+                      <div class="bg-img img-fluid rounded-start m-auto" style="background-image: url(img/ava5.jpg);"></div>
+                      <span style="background-color: #d4d4d4;"></span>
+                    </div>
+                    <div class="col-9">
+                      <div class="card-body">
+                        <h6 class="card-title">Mogen Polish</h6>
+                        <p class="card-text">Designer, UI</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-12 col-md-6 mb-3 mb-md-0">
+            <div class="widgets" style="min-height: 500px;">
+              <div class="p-3 d-flex border-bottom">
+                <span style="font-weight: bold; font-size: 18px;">Tasks</span>
+                <span class="ms-auto p-1">
+                  <i class="fa-solid fa-ellipsis-vertical"></i>
+                </span>
+              </div>
+              <div class="my-3">
+                <div class="widget-cards">
+                  <div class="card">
+                    <div class="row g-0">
+                      <div class="col-2 d-flex">
+                        <div class="text-center m-auto">
+                          <i class="fa-solid fa-circle-plus fa-xl"></i>
+                        </div>
+                      </div>
+                      <div class="col-10">
+                        <div class="card-body">
+                          <p class="card-title">Alexandra Jones added a new project Flat iOS UI Kit</p>
+                          <p class="card-text"><i class="fa-regular fa-clock"></i> Just now</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="widget-cards">
+                  <div class="card">
+                    <div class="row g-0">
+                      <div class="col-2 d-flex">
+                        <div class="text-center m-auto">
+                          <i class="fa-solid fa-circle-check fa-xl"></i>
+                        </div>
+                      </div>
+                      <div class="col-10">
+                        <div class="card-body">
+                          <p class="card-title">Sierra Dickinson is now following you.</p>
+                          <p class="card-text"><i class="fa-regular fa-clock"></i> 20 minutes ago</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="widget-cards">
+                  <div class="card">
+                    <div class="row g-0">
+                      <div class="col-2 d-flex">
+                        <div class="text-center m-auto">
+                          <i class="fa-solid fa-circle-xmark fa-xl"></i>
+                        </div>
+                      </div>
+                      <div class="col-10">
+                        <div class="card-body">
+                          <p class="card-title">Olivia Kelly deleted project IBM</p>
+                          <p class="card-text"><i class="fa-regular fa-clock"></i> 46 minutes ago</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="widget-cards">
+                  <div class="card">
+                    <div class="row g-0">
+                      <div class="col-2 d-flex">
+                        <div class="text-center mx-auto mt-4">
+                          <i class="fa-solid fa-comment-dots"></i>
+                        </div>
+                      </div>
+                      <div class="col-10">
+                        <div class="card-body">
+                          <p class="card-title">Allison Faber commented your project Flat UI Kit</p>
+                          <div class="row my-2 gx-0 gx-sm-3 gx-xl-0 justify-content-xl-center justify-content-start">
+                            <div class="col-xl col-2 col-sm-auto">
+                              <div class="bg-img img-fluid rounded-start m-auto" style="background-image: url(img/ava5.jpg);"></div>
+                            </div>
+                            <div class="col-xl col-2 col-sm-auto">
+                              <div class="bg-img img-fluid rounded-start m-auto" style="background-image: url(img/ava5.jpg);"></div>
+                            </div>
+                            <div class="col-xl col-2 col-sm-auto">
+                              <div class="bg-img img-fluid rounded-start m-auto" style="background-image: url(img/ava5.jpg);"></div>
+                            </div>
+                            <div class="col-xl col-2 col-sm-auto">
+                              <div class="bg-img img-fluid rounded-start m-auto" style="background-image: url(img/ava5.jpg);"></div>
+                            </div>
+                          </div>
+                          <p class="card-text"><i class="fa-regular fa-clock"></i> 2 hours ago</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-12 col-md-6">
+            <div class="widgets" style="min-height: 500px;">
+              <div class="p-3 d-flex border-bottom">
+                <span style="font-weight: bold; font-size: 18px;">Activity</span>
+                <span class="ms-auto notification" style="background-color: #48a0dc">16</span>
+              </div>
+              <div class="p-3">
+                <div class="d-flex p-1" style="background-color: #f3f9ee; color: #88c057;">
+                  <div>10 members update their activities.</div>
+                  <div class="ms-auto"><i class="fa-solid fa-xmark"></i></div>
+                </div>
+              </div>
+              <div class="widget-cards py-3">
+                <div class="card mb-1">
+                  <div class="row g-0 ms-3 ms-xl-0">
+                    <div class="col-lg-3 col-2 d-flex">
+                      <div class="bg-img img-fluid rounded-start m-auto" style="background-image: url(img/ava2.jpg);"></div>
+                    </div>
+                    <div class="col-lg-9 col-auto">
+                      <div class="card-body">
+                        <h6 class="card-title">Mogen Polish</h6>
+                        <p class="card-text">Writter, Editor</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card mb-1">
+                  <div class="row g-0 ms-3 ms-xl-0">
+                    <div class="col-lg-3 col-2 d-flex">
+                      <div class="bg-img img-fluid rounded-start m-auto" style="background-image: url(img/ava3.jpg);"></div>
+                    </div>
+                    <div class="col-lg-9 col-auto">
+                      <div class="card-body">
+                        <h6 class="card-title">Mogen Polish</h6>
+                        <p class="card-text">Designer, Blogger</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card mb-1">
+                  <div class="row g-0 ms-3 ms-xl-0">
+                    <div class="col-lg-3 col-2 d-flex">
+                      <div class="bg-img img-fluid rounded-start m-auto" style="background-image: url(img/ava4.jpg);"></div>
+                    </div>
+                    <div class="col-lg-9 col-auto">
+                      <div class="card-body">
+                        <h6 class="card-title">Mogen Polish</h6>
+                        <p class="card-text">Musician</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card mb-1">
+                  <div class="row g-0 ms-3 ms-xl-0">
+                    <div class="col-lg-3 col-2 d-flex">
+                      <div class="bg-img img-fluid rounded-start m-auto" style="background-image: url(img/ava5.jpg);"></div>
+                    </div>
+                    <div class="col-lg-9 col-auto">
+                      <div class="card-body">
+                        <h6 class="card-title">Mogen Polish</h6>
+                        <p class="card-text">Designer, UI</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12 reports">
+            <div class="row gx-0 mt-4 justify-content-center">
+              <div class="col-xl-9 col-12 mb-4 mb-xl-0">
+                <div class="widgets" style="border-top-right-radius: 0px; border-bottom-right-radius: 0px;">
+                  <div class="p-3">
+                    <h4 class="card-title">Managed Services</h4>
+                    <div class="card-text">Service report of this year (update 1 hour ago)</div>
+                  </div>
+                  <div>
+                    <canvas id="filledChart" width="600px" height="150px">
+                      
+                    </canvas>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3 col-12">
+                <div class="widgets light-widget bg-light" style="border-top-left-radius: 0px; border-bottom-left-radius: 0px;">
+                  <div class="p-3">
+                    <h4 class="card-title mb-4">Reports</h4>
+                    <div class="d-flex align-items-center mb-1">
+                      Consulting
+                      <span class="ms-auto">70%</span>
+                    </div>
+                    <div class="progress" role="progressbar" aria-label="Info example" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+                      <div class="progress-bar bg-info" style="width: 60%"></div>
+                    </div>
+                    <div class="mt-2 mt-xl-4">
+                      <div class="d-flex align-items-center mb-1">
+                        Online tutorials
+                        <span class="ms-auto">45%</span>
+                      </div>
+                      <div class="progress" role="progressbar" aria-label="Info example" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">
+                      <div class="progress-bar bg-success" style="width: 40%"></div>
+                    </div>
+                    </div>
+                    <div class="mt-2 mt-xl-4">
+                      <div class="d-flex align-items-center mb-1">
+                        EDU management
+                        <span class="ms-auto">45%</span>
+                      </div>
+                      <div class="progress" role="progressbar" aria-label="Info example" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">
+                      <div class="progress-bar bg-purple" style="width: 30%"></div>
+                    </div>
+                    </div>
+                    <div class="mt-2 mt-xl-4">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat ipsam aliquid voluptatibus minima ab quasi ipsum itaque.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>  
+      </div>
+      <div class="container-fluid">
+        <div class="row mt-4 justify-content-center">
+          <div class="col-12">
+            <div class="widgets p-3">
+              <div class="d-flex border-bottom p-2">
+                <div>
+                  <h4>Responsive Table</h4>
+                </div>
+                <div class="ms-auto">
+                  <button class="btn btn-light">
+                    <i class="fa-solid fa-gear fa-sm"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="py-3 ps-3">
+                <div class="row justify-content-center justify-content-sm-between">
+                  <div class="col-12 col-sm-auto d-flex flex-column">
+                    <div class="row gx-0">
+                      <div class="col-12 col-md-auto">
+                        <div class="dropdown dd-action">
+                          <button class="btn btn-light dropdown-toggle border" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Bulk Action
+                          </button>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Действие</a></li>
+                            <li><a class="dropdown-item" href="#">Другое действие</a></li>
+                            <li><a class="dropdown-item" href="#">Что-то еще здесь</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="col-12 col-md">
+                        <button class="btn btn-light border ms-lg-2" style="height: 38px;">
+                          <div class="px-4">Apply</div>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-lg-auto mt-2 mt-lg-0">
+                    <form class="row g-0">
+                      <div class="col-9">
+                        <input type="text" class="form-control" id="inputAdd" placeholder="Search" style="border-bottom-right-radius: 0; border-top-right-radius: 0;">
+                      </div>
+                      <div class="col-3">
+                        <button type="submit" class="btn btn-light mb-3 border" style="border-bottom-left-radius: 0; border-top-left-radius: 0; border-left: transparent !important;">Go</button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <div class="table-overflow">
+                <table class="table table-striped table-hover table-vertical m-3">
+                  <thead>
+                    <tr>
+                      <th scope="col">
+                      </th>
+                      <th scope="col">NAME</th>
+                      <th scope="col"></th>
+                      <th scope="col">TASK</th>
+                      <th scope="col">DATE</th>
+                      <th scope="col" class="text-center">STATUS</th>
+                      <th scope="col" class="text-center">ACTION</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">
+                        <div class="form-check">
+                          <input class="form-check-input mx-auto" type="checkbox" value="" id="flexCheckDefault">
+                        </div>
+                      </th>
+                      <td class="table-cards">
+                        <div class="bg-img img-fluid rounded-start my-auto" style="background-image: url(img/ava3.jpg);"></div>    
+                      </td>
+                      <td>
+                        <div class="card-body">
+                          <h6 class="card-title">Shaunta Pollan</h6>
+                        </div>
+                      </td>
+                      <td>Sketch out new idea for promote Great App</td>
+                      <td>Jul 25, 2015</td>
+                      <td>
+                        <div class="bg-info py-2 text-center" style="color: #fff;">Done</div>
+                      </td>
+                      <td>
+                        <button class="btn btn-light border">
+                          <i class="fa-regular fa-pen-to-square"></i>
+                        </button>
+                        <button class="btn btn-light border">
+                          <i class="fa-solid fa-trash"></i>
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">
+                        <div class="form-check">
+                          <input class="form-check-input mx-auto" type="checkbox" value="" id="flexCheckDefault">
+                        </div>
+                      </th>
+                       <td class="table-cards">
+                        <div class="bg-img img-fluid rounded-start my-auto" style="background-image: url(img/ava3.jpg);"></div>    
+                      </td>
+                      <td>
+                        <div class="card-body">
+                          <h6 class="card-title">Ronald Reck</h6>
+                        </div>
+                      </td>
+                      <td>Create design based on promotional page for Getz Pay</td>
+                      <td>Jul 25, 2015</td>
+                      <td>
+                        <div class="bg-warning py-2 text-center" style="color: #fff;">Ongoing</div>
+                      </td>
+                       <td>
+                        <button class="btn btn-light border">
+                          <i class="fa-regular fa-pen-to-square"></i>
+                        </button>
+                        <button class="btn btn-light border">
+                          <i class="fa-solid fa-trash"></i>
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">
+                        <div class="form-check">
+                          <input class="form-check-input mx-auto" type="checkbox" value="" id="flexCheckDefault">
+                        </div>
+                      </th>
+                      <td class="table-cards">
+                        <div class="bg-img img-fluid rounded-start my-auto" style="background-image: url(img/ava3.jpg);"></div>    
+                      </td>
+                      <td>
+                        <div class="card-body">
+                          <h6 class="card-title">Kristine Spindler</h6>
+                        </div>
+                      </td>
+                      <td>Design responsive template for Online Shop</td>
+                      <td>Jul 25, 2015</td>
+                      <td>
+                        <div class="bg-success py-2 text-center" style="color: #fff;">In Review</div>
+                      </td>
+                       <td>
+                        <button class="btn btn-light border">
+                          <i class="fa-regular fa-pen-to-square"></i>
+                        </button>
+                        <button class="btn btn-light border">
+                          <i class="fa-solid fa-trash"></i>
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">
+                        <div class="form-check">
+                          <input class="form-check-input mx-auto" type="checkbox" value="" id="flexCheckDefault">
+                        </div>
+                      </th>
+                      <td class="table-cards">
+                        <div class="bg-img img-fluid rounded-start my-auto" style="background-image: url(img/ava3.jpg);"></div>    
+                      </td>
+                      <td>
+                        <div class="card-body">
+                          <h6 class="card-title">Randolph Seckman</h6>
+                        </div>
+                      </td>
+                      <td>Side bar enhancement for Merchant Panel</td>
+                      <td>Jul 25, 2015</td>
+                      <td>
+                        <div class="bg-purple py-2 text-center" style="color: #fff;">Pending</div>
+                      </td>
+                       <td>
+                        <button class="btn btn-light border">
+                          <i class="fa-regular fa-pen-to-square"></i>
+                        </button>
+                        <button class="btn btn-light border">
+                          <i class="fa-solid fa-trash"></i>
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">
+                        <div class="form-check">
+                          <input class="form-check-input mx-auto" type="checkbox" value="" id="flexCheckDefault">
+                        </div>
+                      </th>
+                      <td class="table-cards">
+                        <div class="bg-img img-fluid rounded-start my-auto" style="background-image: url(img/ava3.jpg);"></div>    
+                      </td>
+                      <td>
+                        <div class="card-body">
+                          <h6 class="card-title">Bailey Angeli</h6>
+                        </div>
+                      </td>
+                      <td>Plan for team building activity Qll</td>
+                      <td>Jul 25, 2015</td>
+                      <td>
+                        <div class="bg-danger py-2 text-center" style="color: #fff;">Removed</div>
+                      </td>
+                      <td>
+                        <button class="btn btn-light border">
+                          <i class="fa-regular fa-pen-to-square"></i>
+                        </button>
+                        <button class="btn btn-light border">
+                          <i class="fa-solid fa-trash"></i>
+                        </button>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="my-2 mx-3">
+                <div class="row justify-content-center justify-content-lg-between">
+                  <div class="col-lg-auto col-12 d-flex">
+                    <p class="card-text my-auto">Showing 20-30 of 50 items</p>
+                  </div>
+                  <div class="col-lg-auto col-12 mt-2 mt-xl-0">
+                    <nav aria-label="Пример навигации по страницам">
+                      <ul class="pagination">
+                        <li class="page-item">
+                          <a class="page-link" href="#" aria-label="Предыдущая">
+                            <span aria-hidden="true">&laquo;</span>
+                          </a>
+                        </li>
+                        <li class="page-item">
+                          <a class="page-link" href="#">1</a>
+                        </li>
+                        <li class="page-item active">
+                          <a class="page-link" href="#">2</a>
+                        </li>
+                        <li class="page-item">
+                          <a class="page-link" href="#">3</a>
+                        </li>
+                        <li class="page-item d-none d-sm-block">
+                          <a class="page-link" href="#">4</a>
+                        </li>
+                        <li class="page-item d-none d-sm-block">
+                          <a class="page-link" href="#">5</a>
+                        </li>
+                        <li class="page-item">
+                          <a class="page-link" href="#" aria-label="Следующая">
+                            <span aria-hidden="true">&raquo;</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </nav>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="tab-pane fade" id="nav-mail" role="tabpanel" tabindex="0">
+      <div class="container-fluid">
+        <div class="widgets">
+          <div class="py-3 messages">
+            <a class="border-bottom" href="dialog.html">
+              <div class="card py-2 new">
+                <div class="row g-0 px-3">
+                  <div class="col-auto">
+                    <div class="bg-img img-fluid rounded-start" style="background-image: url(img/ava.jpg);"></div>
+                  </div>
+                  <div class="col">
+                    <div class="card-body">
+                      <h5 class="card-title">Marietta Volkova</h5>
+                      <p class="card-text">Это более широкая карточка с вспомогательным текстом ниже в качестве естественного перехода к дополнительному контенту. Этот контент немного длиннее.</p>
+                    </div>
+                  </div>
+                  <div class="col-auto">
+                    <div class="card-body pe-2">
+                      <p class="card-text">17:07</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a class="border-bottom" href="dialog.html">
+              <div class="card py-2">
+                <div class="row g-0 px-3">
+                  <div class="col-auto">
+                    <div class="bg-img img-fluid rounded-start" style="background-image: url(img/ava1.jpg);"></div>
+                  </div>
+                  <div class="col">
+                    <div class="card-body">
+                      <h5 class="card-title">Miguel Iriskin</h5>
+                      <p class="card-text">Это более широкая карточка с вспомогательным текстом ниже в качестве естественного перехода к дополнительному контенту. Этот контент немного длиннее.</p>
+                    </div>
+                  </div>
+                  <div class="col-auto">
+                    <div class="card-body pe-2">
+                      <p class="card-text">15:08</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a class="border-bottom" href="dialog.html">
+              <div class="card py-2 new">
+                <div class="row g-0 px-3">
+                  <div class="col-auto">
+                    <div class="bg-img img-fluid rounded-start" style="background-image: url(img/ava3.jpg);"></div>
+                  </div>
+                  <div class="col">
+                    <div class="card-body">
+                      <h5 class="card-title">Lenovo Thinkpad</h5>
+                      <p class="card-text">Это более широкая карточка с вспомогательным текстом ниже в качестве естественного перехода к дополнительному контенту. Этот контент немного длиннее.</p>
+                    </div>
+                  </div>
+                  <div class="col-auto">
+                    <div class="card-body pe-2">
+                      <p class="card-text">13:05</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a class="border-bottom" href="dialog.html">
+              <div class="card py-2">
+                <div class="row g-0 px-3">
+                  <div class="col-auto">
+                    <div class="bg-img img-fluid rounded-start" style="background-image: url(img/ava5.jpg);"></div>
+                  </div>
+                  <div class="col">
+                    <div class="card-body">
+                      <h5 class="card-title">Shawn Michaels</h5>
+                      <p class="card-text">Это более широкая карточка с вспомогательным текстом ниже в качестве естественного перехода к дополнительному контенту. Этот контент немного длиннее.</p>
+                    </div>
+                  </div>
+                  <div class="col-auto">
+                    <div class="card-body pe-2">
+                      <p class="card-text">11:35</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a class="border-bottom" href="dialog.html">
+              <div class="card py-2">
+                <div class="row g-0 px-3">
+                  <div class="col-auto">
+                    <div class="bg-img img-fluid rounded-start" style="background-image: url(img/face.jpg);"></div>
+                  </div>
+                  <div class="col">
+                    <div class="card-body">
+                      <h5 class="card-title">Divan Comfortable</h5>
+                      <p class="card-text">Это более широкая карточка с вспомогательным текстом ниже в качестве естественного перехода к дополнительному контенту. Этот контент немного длиннее.</p>
+                    </div>
+                  </div>
+                  <div class="col-auto">
+                    <div class="card-body pe-2">
+                      <p class="card-text">07:56</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a class="border-bottom" href="dialog.html">
+              <div class="card py-2">
+                <div class="row g-0 px-3">
+                  <div class="col-auto">
+                    <div class="bg-img img-fluid rounded-start" style="background-image: url(img/ava2.jpg);"></div>
+                  </div>
+                  <div class="col">
+                    <div class="card-body">
+                      <h5 class="card-title">Stevie Wonder</h5>
+                      <p class="card-text">Это более широкая карточка с вспомогательным текстом ниже в качестве естественного перехода к дополнительному контенту. Этот контент немного длиннее.</p>
+                    </div>
+                  </div>
+                  <div class="col-auto">
+                    <div class="card-body pe-2">
+                      <p class="card-text">00:32</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a class="border-bottom" href="dialog.html">
+              <div class="card py-2">
+                <div class="row g-0 px-3">
+                  <div class="col-auto">
+                    <div class="bg-img img-fluid rounded-start" style="background-image: url(img/ava4.jpg);"></div>
+                  </div>
+                  <div class="col">
+                    <div class="card-body">
+                      <h5 class="card-title">Kinder Surprise</h5>
+                      <p class="card-text">Это более широкая карточка с вспомогательным текстом ниже в качестве естественного перехода к дополнительному контенту. Этот контент немного длиннее.</p>
+                    </div>
+                  </div>
+                  <div class="col-auto">
+                    <div class="card-body pe-2">
+                      <p class="card-text">yesterday</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a class="border-bottom" href="dialog.html">
+              <div class="card py-2">
+                <div class="row g-0 px-3">
+                  <div class="col-auto">
+                    <div class="bg-img img-fluid rounded-start" style="background-image: url(img/ava5.jpg);"></div>
+                  </div>
+                  <div class="col">
+                    <div class="card-body">
+                      <h5 class="card-title">Francisco Parmalato</h5>
+                      <p class="card-text">Это более широкая карточка с вспомогательным текстом ниже в качестве естественного перехода к дополнительному контенту. Этот контент немного длиннее.</p>
+                    </div>
+                  </div>
+                  <div class="col-auto">
+                    <div class="card-body pe-2">
+                      <p class="card-text">30 oct 2023</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a href="dialog.html">
+              <div class="card py-2">
+                <div class="row g-0 px-3">
+                  <div class="col-auto">
+                    <div class="bg-img img-fluid rounded-start" style="background-image: url(img/ava1.jpg);"></div>
+                  </div>
+                  <div class="col">
+                    <div class="card-body">
+                      <h5 class="card-title">Jack Morisson</h5>
+                      <p class="card-text">Это более широкая карточка с вспомогательным текстом ниже в качестве естественного перехода к дополнительному контенту. Этот контент немного длиннее.</p>
+                    </div>
+                  </div>
+                  <div class="col-auto">
+                    <div class="card-body pe-2">
+                      <p class="card-text">28 sep 2023</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="tab-pane fade" id="nav-calendar" role="tabpanel" tabindex="0">...</div>
+    <div class="tab-pane fade" id="nav-pages" role="tabpanel" tabindex="0">...</div>
+    <div class="tab-pane fade" id="nav-layouts" role="tabpanel" tabindex="0">...</div>
+    <div class="tab-pane fade" id="nav-ui" role="tabpanel" tabindex="0">...</div>
+    <div class="tab-pane fade" id="nav-forms" role="tabpanel" tabindex="0">...</div>
+    <div class="tab-pane fade" id="nav-tablets" role="tabpanel" tabindex="0">...</div>
+    <div class="tab-pane fade" id="nav-chart" role="tabpanel" tabindex="0">...</div>
+    <div class="tab-pane fade" id="nav-maps" role="tabpanel" tabindex="0">...</div>
+  </div>
+</section>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+  <script src="js/common.js"></script>
+
+</body>
+</html>
