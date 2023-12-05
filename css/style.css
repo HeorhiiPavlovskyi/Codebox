@@ -8,8 +8,12 @@ img {
 
 body {
   min-height: 100vh;
-  padding-top: 60px;
-  margin-right: 250px; }
+  padding-top: 60px; }
+  body .dash-page {
+    margin-right: 250px; }
+@media(max-width: 1200px) {
+  body .dash-page {
+    margin-right: 0; } }
   body::-webkit-scrollbar {
     width: 3px;
     height: 4px; }
@@ -19,9 +23,6 @@ body {
   body::-webkit-scrollbar-thumb {
     background-color: #000;
     border-radius: 3px; }
-  @media (max-width: 1200px) {
-    body {
-      margin-right: 0; } }
   body.dark-mode {
     background: rgba(0, 0, 0, 0.4); }
     body.dark-mode .navbar {
@@ -33,9 +34,11 @@ body {
       body.dark-mode .btn:hover {
         opacity: 0.7; }
     body.dark-mode .sandwich {
-      background: #000;
+      background: transparent;
       color: #fff; }
       body.dark-mode .sandwich span {
+        border-top: 2px solid #fff; }
+      body.dark-mode .sandwich:before, body.dark-mode .sandwich:after {
         border-top: 2px solid #fff; }
     body.dark-mode .right-bar {
       background: rgba(0, 0, 0, 0.7);
@@ -44,7 +47,7 @@ body {
         background: rgba(0, 0, 0, 0.3);
         color: #fff; }
     body.dark-mode .dash-page {
-      background: rgba(0, 0, 0, 0.8); }
+      background: black; }
     body.dark-mode .widgets {
       background: rgba(0, 0, 0, 0.3);
       color: #d9d9d9; }
@@ -54,10 +57,14 @@ body {
         color: #fff !important; }
       body.dark-mode .widget-cards .card .card-text {
         color: #c9cccc; }
-
-.mail-body {
-  margin-right: -250px;
-  padding: 5px; }
+    body.dark-mode .card {
+      background: rgba(0, 0, 0, 0.8);
+      color: #fff; }
+      body.dark-mode .card.new {
+        background: rgba(255, 255, 255, 0.1);
+        color: #000; }
+    body.dark-mode .btn-light {
+      background: transparent; }
 
 .up {
   text-transform: uppercase; }
@@ -65,6 +72,12 @@ body {
 .body-active {
   margin-left: 250px;
   transition: 0.3s; }
+  @media (max-width: 767.98px) {
+    .body-active {
+      margin-left: 0;
+      padding-top: 0; }
+      .body-active .dash-page {
+        margin-top: 70px; } }
   .body-active .left-bar {
     transition: 0.3s;
     min-width: 250px;
@@ -93,6 +106,9 @@ body {
   .navbar-dashboard.active {
     width: calc(100% - 250px);
     transform: translateX(250px); }
+    @media (max-width: 767.98px) {
+      .navbar-dashboard.active {
+        Width: 500%; } }
   .navbar-dashboard .user .dropdown-toggle:after {
     display: none; }
   .navbar-dashboard .dropdown-toggle:after {
@@ -565,7 +581,8 @@ body {
     .widget-cards .card .bg-img {
       background-repeat: no-repeat;
       background-size: cover;
-      background-position: top center; }
+      background-position: top center;
+      position: relative; }
     .widget-cards .card .card-title {
       margin-bottom: 0.5rem; }
     .widget-cards .card .online {
@@ -576,8 +593,8 @@ body {
         position: absolute;
         border: 5px solid #fff;
         border-radius: 100px;
-        top: 10px;
-        left: 120px; }
+        top: -5px;
+        left: 35px; }
 
 .notification {
   border-radius: 10px;
@@ -677,6 +694,31 @@ body {
   .chartjs-wrapper .chartjs {
     height: 200px; }
 
+.mail-body {
+  padding: 5px; }
+  @media (max-width: 767.98px) {
+    .mail-body {
+      margin-top: 65px;
+      overflow-x: hidden; } }
+  @media (max-width: 297.98px) {
+    .mail-body {
+      margin-top: 145px; } }
+  @media (min-width: 298px) {
+    .mail-body {
+      margin-top: 100px; } }
+  @media (min-width: 358px) {
+    .mail-body {
+      margin-top: 65px; } }
+  @media (min-width: 523px) {
+    .mail-body {
+      margin-top: 30px; } }
+  @media (min-width: 768px) {
+    .mail-body {
+      margin-top: 25px; } }
+  @media (min-width: 901px) {
+    .mail-body {
+      margin-top: 0; } }
+
 .messages .card {
   border: none;
   border-radius: 0;
@@ -702,6 +744,14 @@ body {
 .messages a {
   text-decoration: none; }
 .messages .message-area {
-  margin-top: auto; }
+  margin-top: auto;
+  overflow-x: hidden; }
+
+.text-box {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #fff; }
 
 /*# sourceMappingURL=style.css.map */

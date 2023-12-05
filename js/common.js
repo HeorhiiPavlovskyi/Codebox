@@ -24,6 +24,14 @@ $('.btn-show').on('click', function(){
   $('.dash-box').toggleClass('d-none');
 });
 
+
+$('.btn-mail-out').on('click', function(){
+  $('#nav-mail').addClass('show', 'active');
+  $('#nav-mail-tab').addClass('active');
+  $('#dashboard').removeClass('show', 'active');
+  $('#nav-dashboard-tab').removeClass('active');
+});
+
 $('.sandwich').on('click', function(){
   $(this).toggleClass('active');
   $('.left-bar').toggleClass('active');
@@ -57,6 +65,10 @@ $('.btn-right-menu').on('click', function(){
   $('.dash-page').toggleClass('inactive');
 });
 
+$('.sandwich').on('click', function(){
+  $('.right-bar').removeClass('active');
+  $('.dash-page').removeClass('inactive');
+});
 
 $('.tab-id').on('click', function(){
   $(this).removeClass('done').prevAll().addClass('done');
@@ -271,10 +283,3 @@ var chart = new Chart(ctx, chartData);
 
  })
 
-
-$('.btn-mail-out').on('click', function(){
-  $('#nav-mail').addClass('show', 'active');
-  $('#nav-mail-tab').addClass('active');
-  $('#dashboard').removeClass('show', 'active');
-  $('#nav-dashboard-tab').removeClass('active');
-});

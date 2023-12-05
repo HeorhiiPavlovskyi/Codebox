@@ -147,14 +147,14 @@
       <div class="mb-3 ms-4">Navigation</div>
       <nav>
         <div class="nav nav-tabs" id="nav-tab" role="tablist">
-          <button class="nav-link active" id="nav-dashboard-tab" data-bs-toggle="tab" data-bs-target="#dashboard">
+          <button class="nav-link" id="nav-dashboard-tab" data-bs-toggle="tab" data-bs-target="#dashboard">
             <div class="dash-inbox d-flex">
               <i class="fa-solid fa-gauge mx-4"></i>
               Dashboard
               <span class="ms-auto">2</span>
             </div>
           </button>
-          <button class="nav-link" id="nav-mail-tab" data-bs-toggle="tab" data-bs-target="#nav-mail">
+          <button class="nav-link active" id="nav-mail-tab" data-bs-toggle="tab" data-bs-target="#nav-mail">
             <div class="d-flex align-items-center">
               <i class="fa-solid fa-envelope mx-4"></i> 
               Mailbox
@@ -614,7 +614,7 @@
 </aside>
 <section class="dash-page">
   <div class="tab-content" id="nav-tabContent">
-    <div class="tab-pane fade show active" id="dashboard" role="tabpanel" tabindex="0">
+    <div class="tab-pane fade" id="dashboard" role="tabpanel" tabindex="0">
       <div class="container-fluid">
         <div class="row gx-4 top-blocks justify-content-center ">
           <div class="col-lg col-12 col-md-6 my-3 m-lg-0">
@@ -775,8 +775,9 @@
                 <div class="card mb-1">
                   <div class="row g-0">
                     <div class="col-3 online d-flex">
-                      <div class="bg-img img-fluid rounded-start m-auto" style="background-image: url(img/ava1.jpg);"></div>
-                      <span style="background-color: #39b54a;"></span>
+                      <div class="bg-img img-fluid rounded-start m-auto" style="background-image: url(img/ava1.jpg);">
+                        <span style="background-color: #39b54a;"></span>
+                      </div>
                     </div>
                     <div class="col-9">
                       <div class="card-body">
@@ -789,8 +790,9 @@
                 <div class="card mb-1">
                   <div class="row g-0">
                     <div class="col-3 online d-flex">
-                      <div class="bg-img img-fluid rounded-start m-auto" style="background-image: url(img/ava2.jpg);"></div>
-                      <span style="background-color: #ee2337;"></span>
+                      <div class="bg-img img-fluid rounded-start m-auto" style="background-image: url(img/ava2.jpg);">
+                        <span style="background-color: #ee2337;"></span>
+                      </div>
                     </div>
                     <div class="col-9">
                       <div class="card-body">
@@ -803,8 +805,9 @@
                 <div class="card mb-1">
                   <div class="row g-0">
                     <div class="col-3 online d-flex">
-                      <div class="bg-img img-fluid rounded-start m-auto" style="background-image: url(img/ava3.jpg);"></div>
-                      <span style="background-color: #ffc700;"></span>
+                      <div class="bg-img img-fluid rounded-start m-auto" style="background-image: url(img/ava3.jpg);">
+                        <span style="background-color: #ffc700;"></span>
+                      </div>
                     </div>
                     <div class="col-9">
                       <div class="card-body">
@@ -817,8 +820,9 @@
                 <div class="card mb-1">
                   <div class="row g-0">
                     <div class="col-3 online d-flex">
-                      <div class="bg-img img-fluid rounded-start m-auto" style="background-image: url(img/ava4.jpg);"></div>
-                      <span style="background-color: #39b54a;"></span>
+                      <div class="bg-img img-fluid rounded-start m-auto" style="background-image: url(img/ava4.jpg);">
+                        <span style="background-color: #39b54a;"></span>
+                      </div>
                     </div>
                     <div class="col-9">
                       <div class="card-body">
@@ -831,8 +835,9 @@
                 <div class="card mb-1">
                   <div class="row g-0">
                     <div class="col-3 online d-flex">
-                      <div class="bg-img img-fluid rounded-start m-auto" style="background-image: url(img/ava5.jpg);"></div>
-                      <span style="background-color: #d4d4d4;"></span>
+                      <div class="bg-img img-fluid rounded-start m-auto" style="background-image: url(img/ava5.jpg);">
+                        <span style="background-color: #d4d4d4;"></span>
+                      </div>
                     </div>
                     <div class="col-9">
                       <div class="card-body">
@@ -1315,7 +1320,7 @@
         </div>
       </div>
     </div>
-    <div class="tab-pane fade" id="nav-mail" role="tabpanel" tabindex="0">
+    <div class="tab-pane fade show active" id="nav-mail" role="tabpanel" tabindex="0">
       <div class="container-fluid">
         <div class="widgets">
           <div class="py-3 messages">
