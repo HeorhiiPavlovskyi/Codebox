@@ -39,6 +39,9 @@ $('.sandwich').on('click', function(){
   $('.navbar-dashboard').toggleClass('active');
 });
 
+// $('.navbar-toggler').on('click', function(){
+//   $('.left-bar').removeClass('active');
+
 $('.sandwich-right').on('click', function(){
   $(this).toggleClass('active');
   $('body').toggleClass('body-active-right');
