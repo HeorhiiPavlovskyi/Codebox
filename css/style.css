@@ -26,7 +26,12 @@ body {
     background-color: #000;
     border-radius: 3px; }
   body.dark-mode {
-    background: rgba(0, 0, 0, 0.4); }
+    background: black; }
+    body.dark-mode .mail-body {
+      background: #000; }
+      body.dark-mode .mail-body .text-box {
+        background: #000;
+        color: #fff; }
     body.dark-mode .navbar {
       background: #003;
       color: #fff !important; }
@@ -51,7 +56,7 @@ body {
     body.dark-mode .dash-page {
       background: black; }
     body.dark-mode .widgets {
-      background: rgba(0, 0, 0, 0.3);
+      background: rgba(0, 0, 0, 0.3) !important;
       color: #d9d9d9; }
     body.dark-mode .messages .card {
       background: #000; }
