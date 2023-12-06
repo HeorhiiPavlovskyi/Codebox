@@ -16,6 +16,8 @@ $('.owl-carousel').owlCarousel({
     
 });
 
+
+
 $('.cross-red').on('click', function(){
   $(this).closest('.dash-box').addClass('d-none');
 });
@@ -41,6 +43,7 @@ $('.sandwich').on('click', function(){
 
 // $('.navbar-toggler').on('click', function(){
 //   $('.left-bar').removeClass('active');
+
 
 $('.sandwich-right').on('click', function(){
   $(this).toggleClass('active');
@@ -286,3 +289,10 @@ var chart = new Chart(ctx, chartData);
 
  })
 
+tinymce.init({
+  selector: 'textarea#default'
+});
+
+Waves.attach('.wave');
+  Waves.attach('.wave-2',  ['waves-light']);
+  Waves.init();

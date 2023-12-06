@@ -96,6 +96,16 @@ body
 		padding-top: 0
 		.dash-page
 			margin-top: 70px
+	@media (min-width: 768px)
+		.dash-page
+			margin-top: 40px
+		.right-bar
+			margin-top: 55px 	
+	@media (min-width: 1342px)
+		.dash-page
+			margin-top: 10px
+		.right-bar
+			margin-top: 25px
 	.left-bar
 		transition: $transition
 		min-width: 250px
@@ -261,9 +271,17 @@ body
 					color: $white-color
 					width: 100%
 					border-radius: 2px
+					transition: $transition
+					&:hover
+						opacity: 0.75
+					&:focus
+
 				.card
 					position: relative
 					border: none !important
+					.card-body
+						.card-title
+							font-weight: bold
 					.rounded-start
 						border-radius: 100px !important
 						border-top-left-radius: 100px
@@ -499,6 +517,8 @@ body
 		&.active
 			background: rgba(0, 0, 0, .2)
 			color: $blue-color
+		&:hover
+			background: rgba(0, 0, 0, .2)
 		.dash-inbox
 			align-items: center
 			position: relative
@@ -600,6 +620,9 @@ body
 		position: relative
 		border: none !important
 		background: transparent
+		.card-body
+			.card-title
+				font-weight: bold
 		.rounded-start
 			border-radius: 100px !important
 			border-top-left-radius: 100px
@@ -751,6 +774,8 @@ body
 		transition: $transition
 		&.new 
 			background-color: #c8c8c8 !important
+		.card-title
+			font-weight: bold
 		.rounded-start
 			border-radius: 0 !important
 		.img-fluid
@@ -779,6 +804,9 @@ body
 	right: 0
 	bottom: 0
 	background: #fff
+
+.tox 
+	max-height: 175px
 
 // CALENDAR
 

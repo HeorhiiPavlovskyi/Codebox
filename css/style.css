@@ -87,6 +87,16 @@ body {
       padding-top: 0; }
       .body-active .dash-page {
         margin-top: 70px; } }
+  @media (min-width: 768px) {
+    .body-active .dash-page {
+      margin-top: 40px; }
+    .body-active .right-bar {
+      margin-top: 55px; } }
+  @media (min-width: 1342px) {
+    .body-active .dash-page {
+      margin-top: 10px; }
+    .body-active .right-bar {
+      margin-top: 25px; } }
   .body-active .left-bar {
     transition: 0.3s;
     min-width: 250px;
@@ -250,10 +260,15 @@ body {
       background: #1d89cf;
       color: #fff;
       width: 100%;
-      border-radius: 2px; }
+      border-radius: 2px;
+      transition: 0.3s; }
+      .right-bar .right-bar-top .tab-content .tab-pane .btn-connection:hover {
+        opacity: 0.75; }
     .right-bar .right-bar-top .tab-content .tab-pane .card {
       position: relative;
       border: none !important; }
+      .right-bar .right-bar-top .tab-content .tab-pane .card .card-body .card-title {
+        font-weight: bold; }
       .right-bar .right-bar-top .tab-content .tab-pane .card .rounded-start {
         border-radius: 100px !important;
         border-top-left-radius: 100px;
@@ -486,6 +501,8 @@ body {
   .nav-tabs .nav-link.active {
     background: rgba(0, 0, 0, 0.2);
     color: #c1daec; }
+  .nav-tabs .nav-link:hover {
+    background: rgba(0, 0, 0, 0.2); }
   .nav-tabs .nav-link .dash-inbox {
     align-items: center;
     position: relative; }
@@ -586,6 +603,8 @@ body {
     position: relative;
     border: none !important;
     background: transparent; }
+    .widget-cards .card .card-body .card-title {
+      font-weight: bold; }
     .widget-cards .card .rounded-start {
       border-radius: 100px !important;
       border-top-left-radius: 100px;
@@ -740,6 +759,8 @@ body {
   transition: 0.3s; }
   .messages .card.new {
     background-color: #c8c8c8 !important; }
+  .messages .card .card-title {
+    font-weight: bold; }
   .messages .card .rounded-start {
     border-radius: 0 !important; }
   .messages .card .img-fluid {
@@ -768,6 +789,9 @@ body {
   right: 0;
   bottom: 0;
   background: #fff; }
+
+.tox {
+  max-height: 175px; }
 
 .day-columns {
   display: flex;
